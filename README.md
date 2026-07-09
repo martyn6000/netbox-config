@@ -4,7 +4,7 @@ NetBox plugin for Config.
 
 
 * Free software: MIT
-* Documentation: https://martyn6000.github.io/netbox-config-plugin/
+* Documentation: https://martyn6000.github.io/netbox-config/
 
 
 ## Features
@@ -47,7 +47,7 @@ No additional Python packages are required beyond NetBox's core dependencies.
 
 This plugin provides a REST API endpoint for managing Config resources:
 
-- `/api/plugins/netbox_config_plugin/configs/` - List and create Config objects
+- `/api/plugins/netbox_config/configs/` - List and create Config objects
 
 
 ## GraphQL
@@ -63,13 +63,13 @@ For adding to a NetBox Docker setup see
 While this is still in development and not yet on pypi you can install with pip:
 
 ```bash
-pip install git+https://github.com/martyn6000/netbox-config-plugin
+pip install git+https://github.com/martyn6000/netbox-config
 ```
 
 or by adding to your `local_requirements.txt` or `plugin_requirements.txt` (netbox-docker):
 
 ```bash
-git+https://github.com/martyn6000/netbox-config-plugin
+git+https://github.com/martyn6000/netbox-config
 ```
 
 Enable the plugin in `/opt/netbox/netbox/netbox/configuration.py`,
@@ -77,11 +77,11 @@ Enable the plugin in `/opt/netbox/netbox/netbox/configuration.py`,
 
 ```python
 PLUGINS = [
-    'netbox_config_plugin'
+    'netbox_config'
 ]
 
 PLUGINS_CONFIG = {
-    "netbox_config_plugin": {},
+    "netbox_config": {},
 }
 ```
 
@@ -91,7 +91,7 @@ This plugin does not require any additional configuration by default. Optional c
 
 ## Usage
 
-For detailed usage instructions, please refer to the [documentation](https://martyn6000.github.io/netbox-config-plugin/).
+For detailed usage instructions, please refer to the [documentation](https://martyn6000.github.io/netbox-config/).
 
 ## Contributing
 
@@ -99,7 +99,7 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 ### Reporting Bugs
 
-Please report bugs by opening an issue on our [GitHub Issues](https://github.com/martyn6000/netbox-config-plugin/issues) page. When reporting bugs, please include:
+Please report bugs by opening an issue on our [GitHub Issues](https://github.com/martyn6000/netbox-config/issues) page. When reporting bugs, please include:
 
 - NetBox version
 - Plugin version
@@ -110,13 +110,13 @@ Please report bugs by opening an issue on our [GitHub Issues](https://github.com
 
 ### Feature Requests
 
-Feature requests can be submitted as [GitHub Issues](https://github.com/martyn6000/netbox-config-plugin/issues) with the "enhancement" label.
+Feature requests can be submitted as [GitHub Issues](https://github.com/martyn6000/netbox-config/issues) with the "enhancement" label.
 
 ## Support
 
-- **Documentation**: https://martyn6000.github.io/netbox-config-plugin/
-- **Issues**: https://github.com/martyn6000/netbox-config-plugin/issues
-- **Discussions**: https://github.com/martyn6000/netbox-config-plugin/discussions
+- **Documentation**: https://martyn6000.github.io/netbox-config/
+- **Issues**: https://github.com/martyn6000/netbox-config/issues
+- **Discussions**: https://github.com/martyn6000/netbox-config/discussions
 - **NetBox Community Slack**: [netdev-community.slack.com](https://netdev.chat/)
 
 ## Credits

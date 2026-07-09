@@ -8,10 +8,10 @@ repos:
     hooks:
     -   id: ruff
         name: "Ruff linter"
-        args: [--fix, netbox_config_plugin/]
+        args: [--fix, netbox_config/]
     -   id: ruff-format
         name: "Ruff formatter"
-        args: [netbox_config_plugin/]
+        args: [netbox_config/]
 
 -   repo: https://github.com/mgedmin/check-manifest
     rev: "0.51"

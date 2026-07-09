@@ -1,1 +1,1 @@
-"""Unit test package for netbox_config_plugin."""
+"""Unit test package for netbox_config."""

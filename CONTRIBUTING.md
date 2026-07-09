@@ -23,7 +23,7 @@ We love your input! We want to make contributing to this project as easy and tra
 
 ### Report Bugs
 
-Report bugs at https://github.com/martyn6000/netbox-config-plugin/issues.
+Report bugs at https://github.com/martyn6000/netbox-config/issues.
 
 If you are reporting a bug, please include:
 
@@ -49,7 +49,7 @@ articles, and such.
 
 ### Submit Feedback
 
-The best way to send feedback is to file an issue at https://github.com/martyn6000/netbox-config-plugin/issues.
+The best way to send feedback is to file an issue at https://github.com/martyn6000/netbox-config/issues.
 
 If you are proposing a feature:
 
@@ -60,13 +60,13 @@ If you are proposing a feature:
 
 ## Get Started!
 
-Ready to contribute? Here's how to set up `netbox-config-plugin` for local development.
+Ready to contribute? Here's how to set up `netbox-config` for local development.
 
-1. Fork the `netbox-config-plugin` repo on GitHub.
+1. Fork the `netbox-config` repo on GitHub.
 2. Clone your fork locally
 
     ```
-    $ git clone git@github.com:your_name_here/netbox-config-plugin.git
+    $ git clone git@github.com:your_name_here/netbox-config.git
     ```
 
 3. Activate the NetBox virtual environment (see the NetBox documentation under [Setting up a Development Environment](https://docs.netbox.dev/en/stable/development/getting-started/)):
@@ -110,7 +110,7 @@ Before you submit a pull request, check that it meets these guidelines:
    your new functionality into a function with a docstring, and add the
    feature to the list in README.md.
 3. The pull request should work for Python 3.12, 3.13, and 3.14. Check
-   https://github.com/martyn6000/netbox-config-plugin/actions
+   https://github.com/martyn6000/netbox-config/actions
    and make sure that the tests pass for all supported Python versions.
 
 

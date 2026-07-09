@@ -6,7 +6,7 @@ requires = ["setuptools>=77.0.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name =  "netbox-config-plugin"
+name =  "netbox-config"
 version = "1.0"
 authors = [
     {name = "Martyn Stanton", email = "martynstanton@hotmail.com"},
@@ -31,7 +31,7 @@ classifiers=[
     'Topic :: System :: Networking',
 ]
 
-requires-python = ">=3.12.0"
+requires-python = ">=3.10.0"
 
 [project.optional-dependencies]
 test = [
@@ -42,9 +42,9 @@ test = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/martyn6000/netbox-config-plugin/blob/main/README.md"
-Source = "https://github.com/martyn6000/netbox-config-plugin"
-Tracker = "https://github.com/martyn6000/netbox-config-plugin/issues"
+Documentation = "https://github.com/martyn6000/netbox-config/blob/main/README.md"
+Source = "https://github.com/martyn6000/netbox-config"
+Tracker = "https://github.com/martyn6000/netbox-config/issues"
 
 [tool.ruff]
 line-length = 120
@@ -70,10 +70,10 @@ ignore = [
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["netbox_config_plugin*"]
+include = ["netbox_config*"]
 
 [tool.setuptools.package-data]
-netbox_config_plugin = [
+netbox_config = [
     "templates/**",
     "static/**",
     "locale/**/*.mo",

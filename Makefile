@@ -1,4 +1,4 @@
-sources = netbox_config_plugin
+sources = netbox_config
 
 .PHONY: test format lint unittest pre-commit clean
 test: format lint unittest

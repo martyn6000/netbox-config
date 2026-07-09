@@ -1,0 +1,35 @@
+{% extends 'generic/object.html' %}
+{% load render_table from django_tables2 %}
+
+{% block content %}
+{# 1. Check for the actual configuration content instead of the parent device object #}
+{% if device_config %}
+  <div class="row mb-3">
+    {# 2. Expand width to col-md-12 so configurations are readable #}
+    <div class="col col-md-12">
+      <div class="card">
+        <h5 class="card-header d-flex justify-content-between align-items-center">
+          <span>Show Current Config</span>
+          <div class="btn-group btn-group-sm" role="group">
+            <a href="?format=json" type="button" class="btn btn-sm {% if format == 'json' %}btn-primary{% else %}btn-outline-secondary{% endif %}">JSON</a>
+            <a href="?format=yaml" type="button" class="btn btn-sm {% if format == 'yaml' %}btn-primary{% else %}btn-outline-secondary{% endif %}">YAML</a>
+            <a href="?format=raw" type="button" class="btn btn-sm {% if format == 'raw' %}btn-primary{% else %}btn-outline-secondary{% endif %}">RAW</a>
+          </div>
+        </h5>
+        <table class="table table-hover attr-table">
+          <tr>
+            <td>
+              <pre style="margin: 0; font-family: monospace; white-space: pre-wrap;"><code class="language-{{ format }}">{{ device_config }}</code></pre>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+{% else %}
+  {# 3. This block will now correctly fire if the specific format configuration is missing #}
+  <div class="alert alert-warning" role="alert">
+    No <strong>{{ format|upper }}</strong> configuration assigned to this device.
+  </div>
+{% endif %}
+{% endblock content %}

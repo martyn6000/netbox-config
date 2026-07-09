@@ -1,7 +1,7 @@
 site_name: NetBox Config Plugin
-site_url: https://martyn6000.github.io/netbox-config-plugin
-repo_url: https://github.com/martyn6000/netbox-config-plugin
-repo_name: martyn6000/netbox-config-plugin
+site_url: https://martyn6000.github.io/netbox-config
+repo_url: https://github.com/martyn6000/netbox-config
+repo_name: martyn6000/netbox-config
 #strict: true
 nav:
   - Home: index.md
@@ -62,7 +62,7 @@ plugins:
   - search:
       lang: en
 watch:
-  - netbox_config_plugin
+  - netbox_config
 extra:
   social:
     - icon: fontawesome/brands/twitter
@@ -74,7 +74,7 @@ extra:
       link: https://github.com/netbox-community/cookiecutter-netbox-plugin
       name: Facebook
     - icon: fontawesome/brands/github
-      link: https://github.com/martyn6000/netbox-config-plugin
+      link: https://github.com/martyn6000/netbox-config
       name: Github
     - icon: material/email
       link: "mailto:martynstanton@hotmail.com"
