@@ -9,7 +9,7 @@ https://docs.netbox.dev/en/stable/plugins/development/#pluginconfig-attributes
 
 __author__ = """Martyn Stanton"""
 __email__ = "martynstanton@hotmail.com"
-__version__ = "1.0"
+__version__ = "1.1"
 
 
 from netbox.plugins import PluginConfig
@@ -22,7 +22,7 @@ class ConfigConfig(PluginConfig):
     author= "Martyn Stanton"
     author_email = "martynstanton@hotmail.com"
     version = __version__
-    base_url = "netbox_config"
+    base_url = "configs"
     min_version = "4.3.0"
     max_version = "4.5.99"
     graphql_schema = "graphql.schema"
